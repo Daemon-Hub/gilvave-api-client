@@ -1,0 +1,30 @@
+info:
+  name: update_user_roles
+  type: http
+  seq: 6
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/admin/users/019d91fc-0a87-752f-be2b-96c09175e61b/roles
+  body:
+    type: json
+    data: "{\r
+
+      \    \"role_ids\": [\r
+
+      \        \"6475a80d-1dc9-485d-98aa-6a20a8c873d1\",\r
+
+      \        \"01adb03a-f183-46bd-80bb-026f4a7fcf79\"\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{access}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,20 @@
+info:
+  name: update_name
+  type: http
+  seq: 4
+
+http:
+  method: PATCH
+  url: "{{BASE_HTTP_URL}}/servers/{{server_id}}/channels/{{channel_id}}/name"
+  body:
+    type: json
+    data: '"new_name"'
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

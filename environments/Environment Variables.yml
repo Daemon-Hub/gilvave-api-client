@@ -1,0 +1,18 @@
+name: Environment Variables
+variables:
+  - name: access_token
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllMjJmYi0zMDM1LTc2OTMtOGJlNi0yMmQ2ZjI0NWMxYjYiLCJleHAiOjE3NzkyODgwNzAsImp0aSI6IjRlZWYyODhiLTQ3ZDktNDkxOC04ODQ4LWVhMjA5MzIwY2RjZSJ9.q7ag58QmHgV_DjEx5L_Z_Axp1ybFno3-F7xeKzjuhZg
+  - name: refresh_token
+    value: SZPNUhMfg5lFXJGGcMW3t7W3rAvRcPZ8VG4qEZZDTqxNYiXt063XMPb2nYyGxth-DF-k9efgnXhPJftrRtzqnw
+  - name: BASE_WS_URL
+    value: ws://localhost:3100/ws
+  - name: BASE_HTTP_URL
+    value: http://localhost:3000
+  - name: server_id
+    value: 57b4452c-3699-484e-bc04-878d292f381c
+  - name: channel_id
+    value: bbdb985a-e1ee-485e-87d0-6404fe2ddbe1
+  - name: access_token2
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllMjdmMC04OGE2LTcwNDItYjg4Yy1iYWYyYjQ1NDNiZDAiLCJleHAiOjE3NzkyODgyODYsImp0aSI6IjE3NGJkYzQxLTk4YzUtNGY3ZC1hODM4LWY2ZmViMTgzYWQ2MCJ9.W2trFZkSilSYovik6X_c6Qi4tc8q0SkJ1nKQzHpJcWE
+  - name: refresh_token2
+    value: KiyqDWbmPOO_Z91EwLZv_5EiWd44tQEwIvr0vb1ZWESXST0y935MsK7DYBAKsAlB1sF1NTfuQgsetbdp2fh8QA

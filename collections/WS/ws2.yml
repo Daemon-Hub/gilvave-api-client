@@ -1,0 +1,17 @@
+info:
+  name: ws2
+  type: websocket
+  seq: 2
+
+websocket:
+  url: "{{BASE_WS_URL}}"
+  message:
+    type: text
+    data: "{{ch}}"
+  auth:
+    type: bearer
+    token: "{{access_token2}}"
+
+settings:
+  timeout: 0
+  keepAliveInterval: 0

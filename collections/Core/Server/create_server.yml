@@ -1,0 +1,35 @@
+info:
+  name: create_server
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{BASE_HTTP_URL}}/servers"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"my_server\",\r
+
+      \    // \"icon_url\": \"https://my.server.image?id=123-456-678-90000\",\r
+
+      \    \"is_public\": true\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        const response = res.getBody();
+        bru.setGlobalEnvVar('server_id', response.id);
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,26 @@
+info:
+  name: update_position
+  type: http
+  seq: 5
+
+http:
+  method: PATCH
+  url: "{{BASE_HTTP_URL}}/servers/fdfafe7e-2343-4d75-971d-021aa4138277/channels/90bc837f-f019-4ef0-ba32-9fafca89f326/position"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"old\": 1,\r
+
+      \    \"new\": 3\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

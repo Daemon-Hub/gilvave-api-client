@@ -1,0 +1,32 @@
+info:
+  name: update_role_perms
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/admin/roles/8c40d013-fb83-40b8-a301-e03f6e1700af/permissions
+  body:
+    type: json
+    data: "{\r
+
+      \    \"permission_ids\": [\r
+
+      \        \"b14111aa-aa98-418e-bcec-76c9f84f84c5\", \r
+
+      \        \"88db182f-fc6e-479d-b845-7b30879cc9ad\",\r
+
+      \        \"b37ca130-608b-48c2-a6c7-3d0a930fc597\"\r
+
+      \    ]\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{access}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

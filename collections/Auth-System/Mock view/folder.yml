@@ -1,0 +1,7 @@
+info:
+  name: Mock view
+  type: folder
+  seq: 1
+
+request:
+  auth: inherit

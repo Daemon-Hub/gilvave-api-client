@@ -1,0 +1,17 @@
+info:
+  name: moderate_post
+  type: http
+  seq: 5
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/mock/posts/1/moderate
+  auth:
+    type: bearer
+    token: "{{access}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

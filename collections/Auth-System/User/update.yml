@@ -1,0 +1,30 @@
+info:
+  name: update
+  type: http
+  seq: 8
+
+http:
+  method: PATCH
+  url: http://127.0.0.1:8000/users/me
+  body:
+    type: json
+    data: "{\r
+
+      //   \"first_name\": \"admin\",\r
+
+      //   \"last_name\": \"adminlaster123\",\r
+
+      \  \"patronymic\": \"adminpatron\"\r
+
+      //   \"email\": \"admin@mail.ru\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{access}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

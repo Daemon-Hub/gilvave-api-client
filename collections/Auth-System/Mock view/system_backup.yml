@@ -1,0 +1,17 @@
+info:
+  name: system_backup
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/mock/system/backup
+  auth:
+    type: bearer
+    token: "{{access}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

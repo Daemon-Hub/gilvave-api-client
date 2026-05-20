@@ -4,6 +4,12 @@ info:
   type: workspace
 
 collections:
+  - name: "Auth-System"
+    path: "collections/Auth-System"
+  - name: "Core"
+    path: "collections/Core"
+  - name: "WS"
+    path: "collections/WS"
 
 specs:
 

@@ -1,0 +1,30 @@
+info:
+  name: refresh_token 2
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: "{{BASE_HTTP_URL}}/users/refresh"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"refresh_token\": \"{{refresh_token2}}\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        const response = res.getBody();
+        bru.setGlobalEnvVar('access_token2', response.access_token);
+        bru.setGlobalEnvVar('refresh_token2', response.refresh_token);
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

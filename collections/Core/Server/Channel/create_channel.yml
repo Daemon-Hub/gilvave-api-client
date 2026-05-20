@@ -1,0 +1,35 @@
+info:
+  name: create_channel
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_HTTP_URL}}/servers/{{server_id}}/channels"
+  body:
+    type: json
+    data: "{\r
+
+      \    \"name\": \"Chat\",\r
+
+      \    // \"type\": \"TEXT\",\r
+
+      \    \"type\": \"VOICE\"\r
+
+      }"
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        const response = res.getBody();
+        bru.setGlobalEnvVar('channel_id', response.id);
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

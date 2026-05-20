@@ -1,0 +1,17 @@
+info:
+  name: manage_users
+  type: http
+  seq: 4
+
+http:
+  method: PUT
+  url: http://127.0.0.1:8000/mock/users/1/manage
+  auth:
+    type: bearer
+    token: "{{access}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

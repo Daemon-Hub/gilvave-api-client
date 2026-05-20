@@ -1,0 +1,33 @@
+info:
+  name: login
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://127.0.0.1:3000/users/login
+  body:
+    type: json
+    data: "{\r
+
+      \  \"email\": \"1@gmail.com\",\r
+
+      \  \"password\": \"123123\"\r
+
+      }"
+  auth: inherit
+
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        const response = res.getBody();
+        bru.setGlobalEnvVar('access_token', response.access_token);
+        bru.setGlobalEnvVar('refresh_token', response.refresh_token);
+        //console.log(Object.keys(bru));
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
