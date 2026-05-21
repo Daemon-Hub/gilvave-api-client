@@ -8,15 +8,12 @@ http:
   url: "{{BASE_HTTP_URL}}/users/register"
   body:
     type: json
-    data: "{\r
-
-      \  \"username\": \"3\",\r
-
-      \  \"email\": \"3@gmail.com\",\r
-
-      \  \"password\": \"3\"\r
-
-      }"
+    data: |-
+      {
+        "username": "2",
+        "email": "2@gmail.com",
+        "password": "2"
+      }
   auth: inherit
 
 settings:

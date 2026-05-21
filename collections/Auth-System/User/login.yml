@@ -8,13 +8,11 @@ http:
   url: http://127.0.0.1:3000/users/login
   body:
     type: json
-    data: "{\r
-
-      \  \"email\": \"1@gmail.com\",\r
-
-      \  \"password\": \"123123\"\r
-
-      }"
+    data: |-
+      {
+        "email": "1@gmail.com",
+        "password": "1"
+      }
   auth: inherit
 
 runtime:

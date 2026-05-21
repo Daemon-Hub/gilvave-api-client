@@ -5,20 +5,21 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_HTTP_URL}}/servers?role=member"
+  url: "{{BASE_HTTP_URL}}/servers?role=owner"
   params:
     - name: role
-      value: member
+      value: owner
       type: query
   auth:
     type: bearer
-    token: "{{access_token2}}"
+    token: "{{access_token}}"
 
 runtime:
   scripts:
     - type: after-response
       code: |-
         const response = res.getBody();
+        console.log(response);
         bru.setGlobalEnvVar('server_id', response[0].id);
 
 settings:

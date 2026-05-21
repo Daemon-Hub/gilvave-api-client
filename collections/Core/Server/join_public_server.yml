@@ -8,7 +8,7 @@ http:
   url: "{{BASE_HTTP_URL}}/servers/{{server_id}}/join_public"
   auth:
     type: bearer
-    token: "{{access_token}}"
+    token: "{{access_token2}}"
 
 settings:
   encodeUrl: true
