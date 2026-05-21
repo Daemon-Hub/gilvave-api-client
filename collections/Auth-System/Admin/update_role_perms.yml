@@ -5,7 +5,7 @@ info:
 
 http:
   method: PUT
-  url: http://127.0.0.1:8000/admin/roles/8c40d013-fb83-40b8-a301-e03f6e1700af/permissions
+  url: "{{BASE_HTTP_URL}}/admin/roles/8c40d013-fb83-40b8-a301-e03f6e1700af/permissions"
   body:
     type: json
     data: "{\r

@@ -5,7 +5,7 @@ info:
 
 http:
   method: POST
-  url: http://127.0.0.1:8000/users/logout
+  url: "{{BASE_HTTP_URL}}/users/logout"
   auth:
     type: bearer
     token: "{{access}}"

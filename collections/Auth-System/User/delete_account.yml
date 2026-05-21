@@ -5,7 +5,7 @@ info:
 
 http:
   method: DELETE
-  url: http://127.0.0.1:8000/users/me
+  url: "{{BASE_HTTP_URL}}/users/me"
   auth:
     type: bearer
     token: "{{access}}"

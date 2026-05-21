@@ -5,7 +5,7 @@ info:
 
 http:
   method: PUT
-  url: http://127.0.0.1:8000/admin/users/019d91fc-0a87-752f-be2b-96c09175e61b/roles
+  url: "{{BASE_HTTP_URL}}/admin/users/019d91fc-0a87-752f-be2b-96c09175e61b/roles"
   body:
     type: json
     data: "{\r

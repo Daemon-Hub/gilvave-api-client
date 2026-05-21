@@ -5,7 +5,7 @@ info:
 
 http:
   method: PATCH
-  url: http://127.0.0.1:8000/users/me
+  url: "{{BASE_HTTP_URL}}/users/me"
   body:
     type: json
     data: "{\r
