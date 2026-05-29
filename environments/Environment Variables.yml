@@ -1,18 +1,18 @@
 name: Environment Variables
 variables:
   - name: access_token
-    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllNGIyNS1mYzg5LTc1ZDEtYmQzZi00Y2RhZTRkOTkwNTAiLCJleHAiOjE3NzkzOTMwMzMsImp0aSI6ImQzYmZiNmJjLWJiOTMtNGZhYy05YjYwLTE2NzA4Y2VmZDg2YyJ9.eP48ps5fuIzV4n_Z5Kaa8nMZYoLMMPvAiBnPDJKKBg0
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllNjBiNy0xNDFjLTc3NjItYTJiOC0zNzczNTU0MDc5YTciLCJleHAiOjE3ODAwNjQxOTEsImp0aSI6ImEwZThkOWM3LTY0NWYtNDY1Mi05NmI1LTA2Y2IxNzI5ZmI4YiJ9.IQekhNJ4AO3UDefkQ5ogNduK_wp-DHGSZiAPlOu1Mm0
   - name: refresh_token
-    value: 8FAZ_VjupcpoXhWJ3h_dRZjbfj38jCTfiw7wVkSCbB0QnF4v6Xxwh9w4pRGV0idgJKDeHT8jzGW6BgTRGp4-yA
+    value: glwopB9yzN8E2_APC4oZPzaZO-N3f75aj8H6uwHuF-WhpBrhWN-BqXnW_dvjOMvgB2ElsnWK26Vmw1RKB1nDbw
   - name: BASE_WS_URL
     value: ws://kim.netbird.cloud:3100/ws
   - name: BASE_HTTP_URL
     value: http://kim.netbird.cloud:3000
   - name: server_id
-    value: e18e648e-24bb-4582-97dc-5f0e7b1e4e97
+    value: 63a6ee6f-4bf4-4c0e-9703-f92b645813e6
   - name: channel_id
     value: bbdb985a-e1ee-485e-87d0-6404fe2ddbe1
   - name: access_token2
-    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllNGIyNi0yZDI5LTdiMjItYWMxMC1kNGNjYjRiMTE5NzAiLCJleHAiOjE3NzkzNzg2MTUsImp0aSI6IjkyZmM0MzRmLWI0ZTctNGY3Yi1iZWVlLWM2YWUyYmM1NTgxYSJ9.K-_fAlzHoFK55DZLfzIle_krPgqRauSjdV6zuyo_unc
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllNjBlZS1kZjk5LTc0NjMtYjlmOC1mMzc5ZDBiMWE2OTQiLCJleHAiOjE3Nzk3NDM5NTIsImp0aSI6IjMzZjhjZWE0LTkzYTctNDY2Ny1iNzVmLWFkMTM1MmMzY2VmNyJ9.GaN1T6mrkacxPKT2gcpDu4ERwJRHJefqCgEShRB894I
   - name: refresh_token2
-    value: ai3fXn-uDYn3rH4J5AtWb6n7WBONqcpAwZ-OYPoxm5HZH_vu1suQktfkWgacHAZv48_s3Zw3QavrniS07HtRWA
+    value: pzuoIz-ITZQ6ZGfkZPuDDlMdCJVRggKEkrgyW7x5bFC_o_BVfAPJ20NA5B7_YmFpo-sNxEJk5oOe1kS2uYf4-Q

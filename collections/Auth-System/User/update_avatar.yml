@@ -1,0 +1,24 @@
+info:
+  name: update_avatar
+  type: http
+  seq: 11
+
+http:
+  method: PATCH
+  url: "{{BASE_HTTP_URL}}/users/me/avatar"
+  body:
+    type: multipart-form
+    data:
+      - name: avatar
+        type: file
+        value:
+          - C:\Users\KIM\Downloads\real_test_image.png
+  auth:
+    type: bearer
+    token: "{{access_token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -8,13 +8,11 @@ http:
   url: "{{BASE_HTTP_URL}}/users/login"
   body:
     type: json
-    data: "{\r
-
-      \  \"email\": \"2@gmail.com\",\r
-
-      \  \"password\": \"2\"\r
-
-      }"
+    data: |-
+      {
+        "email": "1@gmail.com",
+        "password": "1"
+      }
   auth: inherit
 
 runtime:

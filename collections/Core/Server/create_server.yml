@@ -8,15 +8,12 @@ http:
   url: "{{BASE_HTTP_URL}}/servers"
   body:
     type: json
-    data: "{\r
-
-      \    \"name\": \"my_server\",\r
-
-      \    // \"icon_url\": \"https://my.server.image?id=123-456-678-90000\",\r
-
-      \    \"is_public\": true\r
-
-      }"
+    data: |-
+      {
+          "name": "777",
+          // "icon_url": "https://my.server.image?id=123-456-678-90000",
+          "is_public": true
+      }
   auth:
     type: bearer
     token: "{{access_token}}"

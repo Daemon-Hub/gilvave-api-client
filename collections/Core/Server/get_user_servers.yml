@@ -5,11 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_HTTP_URL}}/servers?role=owner"
-  params:
-    - name: role
-      value: owner
-      type: query
+  url: "{{BASE_HTTP_URL}}/servers"
   auth:
     type: bearer
     token: "{{access_token}}"
