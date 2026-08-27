@@ -8,7 +8,7 @@ http:
   url: "{{BASE_HTTP_URL}}/users/logout"
   auth:
     type: bearer
-    token: "{{access}}"
+    token: "{{access_token}}"
 
 settings:
   encodeUrl: true

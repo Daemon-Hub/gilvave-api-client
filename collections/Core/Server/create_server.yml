@@ -10,13 +10,13 @@ http:
     type: json
     data: |-
       {
-          "name": "777",
+          "name": "test_server{{$randomColor}}",
           // "icon_url": "https://my.server.image?id=123-456-678-90000",
           "is_public": true
       }
   auth:
     type: bearer
-    token: "{{access_token}}"
+    token: "{{access_token2}}"
 
 runtime:
   scripts:

@@ -6,8 +6,52 @@ info:
 websocket:
   url: "{{BASE_WS_URL}}"
   message:
-    type: text
-    data: "{{mc}}"
+    - title: JOIN_CHANNEL
+      selected: true
+      message:
+        type: json
+        data: |-
+          {
+            "op": "JOIN_CHANNEL",
+            "d": {
+              "channel_id": "{{channel_id}}"
+            }
+          }
+    - title: LEFT_CHANNEL
+      selected: false
+      message:
+        type: json
+        data: |-
+          {
+            "op": "LEFT_CHANNEL",
+            "d": {
+              "channel_id": "{{channel_id}}"
+            }
+          }
+    - title: CHANNEL_HISTORY_BEFORE
+      selected: false
+      message:
+        type: json
+        data: |-
+          {
+            "op": "CHANNEL_HISTORY_BEFORE",
+            "d": {
+              "channel_id": "{{channel_id}}",
+              "timestamp": "2026-06-22T21:24:18.707705Z"
+            }
+          }
+    - title: CHANNEL_HISTORY_AFTER
+      selected: false
+      message:
+        type: json
+        data: |-
+          {
+            "op": "CHANNEL_HISTORY_AFTER",
+            "d": {
+              "channel_id": {{channel_id}},
+              "timestamp": "2026-06-22T21:24:18.707705Z"
+            }
+          }
   auth:
     type: bearer
     token: "{{access_token}}"

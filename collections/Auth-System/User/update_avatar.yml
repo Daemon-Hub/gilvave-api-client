@@ -12,10 +12,11 @@ http:
       - name: avatar
         type: file
         value:
-          - C:\Users\KIM\Downloads\real_test_image.png
+          - C:\Users\KIM\Downloads\icon.png
+        contentType: image/png
   auth:
     type: bearer
-    token: "{{access_token}}"
+    token: "{{access_token2}}"
 
 settings:
   encodeUrl: true

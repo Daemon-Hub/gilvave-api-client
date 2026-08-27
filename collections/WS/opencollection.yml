@@ -13,48 +13,6 @@ config:
         username: ""
         password: ""
       bypassProxy: ""
-
-request:
-  variables:
-    - name: hb
-      value: |-
-        {
-            "op": "HEARTBEAT"
-        }
-    - name: jc
-      value: |-
-        {
-          "op": "JOIN_CHANNEL",
-          "d": {
-            "channel_id": "{{channel_id}}"
-          }
-        }
-    - name: lc
-      value: |-
-        {
-          "op": "LEFT_CHANNEL",
-          "d": {
-            "channel_id": "{{channel_id}}"
-          }
-        }
-    - name: mc
-      value: |-
-        {
-          "op": "MESSAGE_CREATE",
-          "d": {
-            "channel_id": "{{channel_id}}",
-            "content": "hello world"
-          }
-        }
-    - name: ch
-      value: |-
-        {
-          "op": "CHANNEL_HISTORY",
-          "d": {
-            "channel_id": "{{channel_id}}",
-            "from": "2026-05-15T19:21:44.286362Z"
-          }
-        }
 bundled: false
 extensions:
   bruno:

@@ -8,15 +8,12 @@ http:
   url: "{{BASE_HTTP_URL}}/servers/{{server_id}}/channels"
   body:
     type: json
-    data: "{\r
-
-      \    \"name\": \"Chat\",\r
-
-      \    // \"type\": \"TEXT\",\r
-
-      \    \"type\": \"VOICE\"\r
-
-      }"
+    data: |-
+      {
+          "name": "TextChat4",
+          "type": "TEXT"
+      //     "type": "VOICE"
+      }
   auth:
     type: bearer
     token: "{{access_token}}"

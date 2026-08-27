@@ -10,8 +10,15 @@ http:
     type: json
     data: |-
       {
-        "email": "123@gmail.com",
-        "password": "123123"
+        "email": "1",
+        "password": "1",
+        "device_id": "{{$randomUUID}}",
+        "device_info": {
+          "platform": "Windows",
+          "os_version": 11,
+          "client": "desktop",
+          "client_version": "0.1.0"
+        }
       }
   auth: inherit
 

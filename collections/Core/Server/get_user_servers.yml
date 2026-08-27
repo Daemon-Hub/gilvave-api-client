@@ -15,7 +15,6 @@ runtime:
     - type: after-response
       code: |-
         const response = res.getBody();
-        console.log(response);
         bru.setGlobalEnvVar('server_id', response[0].id);
 
 settings:

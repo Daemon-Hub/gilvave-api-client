@@ -1,18 +1,26 @@
 name: Environment Variables
 variables:
-  - name: access_token
-    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllNjBiNy0xNDFjLTc3NjItYTJiOC0zNzczNTU0MDc5YTciLCJleHAiOjE3ODAwNjQxOTEsImp0aSI6ImEwZThkOWM3LTY0NWYtNDY1Mi05NmI1LTA2Y2IxNzI5ZmI4YiJ9.IQekhNJ4AO3UDefkQ5ogNduK_wp-DHGSZiAPlOu1Mm0
-  - name: refresh_token
-    value: glwopB9yzN8E2_APC4oZPzaZO-N3f75aj8H6uwHuF-WhpBrhWN-BqXnW_dvjOMvgB2ElsnWK26Vmw1RKB1nDbw
   - name: BASE_WS_URL
     value: ws://kim.netbird.cloud:3100/ws
+    description: ""
   - name: BASE_HTTP_URL
     value: http://kim.netbird.cloud:3000
-  - name: server_id
-    value: 63a6ee6f-4bf4-4c0e-9703-f92b645813e6
-  - name: channel_id
-    value: bbdb985a-e1ee-485e-87d0-6404fe2ddbe1
+    description: ""
+  - name: access_token
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMWEwMTY1OC04ODQ3LTdjNjMtODMzMi0zYWIzYzI3Mzc3YzAiLCJzaWQiOiIwMWEwMTZjMS1jNGMxLTdjNjAtYTZhZi1kMmNjMGVjZWE0N2YiLCJleHAiOjE3ODcwODk3OTcsImp0aSI6IjBiNjQzOTc1LTMxNzktNDhkNC1hZjVkLWRjZjkxODA0YThmNyJ9.XCZmHhOoXe8fYs9ODUiw3YFhqRc40W1RPm-vqD58CR0
+    description: ""
+  - name: refresh_token
+    value: acQ6jozieXAA5FfZ2yrOKKdPPSSCYP2No4oJCobSAU1W11lNoTnKHQXN-4v6lUNW7168QUNPGszZm9LUDKQ09w
+    description: ""
   - name: access_token2
-    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMTllNjBlZS1kZjk5LTc0NjMtYjlmOC1mMzc5ZDBiMWE2OTQiLCJleHAiOjE3Nzk3NDM5NTIsImp0aSI6IjMzZjhjZWE0LTkzYTctNDY2Ny1iNzVmLWFkMTM1MmMzY2VmNyJ9.GaN1T6mrkacxPKT2gcpDu4ERwJRHJefqCgEShRB894I
+    value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIwMWEwMTY1OC04ODQ3LTdjNjMtODMzMi0zYWIzYzI3Mzc3YzAiLCJzaWQiOiIwMWEwMTZjMS1jNGMxLTdjNjAtYTZhZi1kMmNjMGVjZWE0N2YiLCJleHAiOjE3ODcwODk3OTcsImp0aSI6IjBiNjQzOTc1LTMxNzktNDhkNC1hZjVkLWRjZjkxODA0YThmNyJ9.XCZmHhOoXe8fYs9ODUiw3YFhqRc40W1RPm-vqD58CR0
+    description: ""
   - name: refresh_token2
-    value: pzuoIz-ITZQ6ZGfkZPuDDlMdCJVRggKEkrgyW7x5bFC_o_BVfAPJ20NA5B7_YmFpo-sNxEJk5oOe1kS2uYf4-Q
+    value: acQ6jozieXAA5FfZ2yrOKKdPPSSCYP2No4oJCobSAU1W11lNoTnKHQXN-4v6lUNW7168QUNPGszZm9LUDKQ09w
+    description: ""
+  - name: server_id
+    value: e6032eda-f5ee-4c7b-ba9e-1e6d6a552095
+    description: ""
+  - name: channel_id
+    value: e6032eda-f5ee-4c7b-ba9e-1e6d6a552095
+    description: ""
